@@ -22,7 +22,6 @@ import {
   LocalOffer
 } from '@mui/icons-material';
 import api from '../services/api';
-import { useAuth } from '../context/AuthContext';
 import { useTheme } from '../context/ThemeContext';
 
 const CreateProject = () => {
