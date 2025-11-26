@@ -33,8 +33,6 @@ import {
   AccessTime,
   Visibility,
   VisibilityOff,
-  Star,
-  Edit,
   Settings,
   PhotoCamera
 } from '@mui/icons-material';
@@ -806,7 +804,6 @@ const Profile = () => {
           {userTeams && userTeams.length > 0 ? (
             <Grid container spacing={3}>
               {userTeams.map((team) => {
-                const joinDate = team.TeamMembers?.createdAt || team.createdAt;
                 const isLeader = team.leaderId === user?.id;
                 const memberCount = team.members?.length || 0;
                 const memberPercentage = (memberCount / team.maxMembers) * 100;

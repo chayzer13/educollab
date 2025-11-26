@@ -8,13 +8,10 @@ import {
   Grid, 
   Card, 
   CardContent,
-  CardActions,
   Chip,
   Avatar,
   CircularProgress,
   LinearProgress,
-  Divider,
-  IconButton,
   Paper
 } from '@mui/material';
 import { 
@@ -31,8 +28,7 @@ import {
   Visibility,
   VisibilityOff,
   RocketLaunch,
-  Groups,
-  Assessment
+  Groups
 } from '@mui/icons-material';
 import { useAuth } from '../context/AuthContext';
 import { useTheme } from '../context/ThemeContext';

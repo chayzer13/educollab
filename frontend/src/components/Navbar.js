@@ -19,7 +19,6 @@ const Navbar = () => {
   const { user, logout } = useAuth();
   const { mode, toggleTheme } = useTheme();
   const navigate = useNavigate();
-  const isDark = mode === 'dark';
 
   const handleLogout = () => {
     logout();

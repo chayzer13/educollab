@@ -150,16 +150,6 @@ const getTheme = (mode) => {
           }
         }
       },
-      MuiChip: {
-        styleOverrides: {
-          root: {
-            borderRadius: 12,
-            fontSize: '12px',
-            height: '20px',
-            fontWeight: 500
-          }
-        }
-      },
       MuiTextField: {
         styleOverrides: {
           root: {

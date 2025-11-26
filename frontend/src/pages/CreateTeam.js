@@ -34,7 +34,6 @@ const CreateTeam = () => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
   const queryClient = useQueryClient();
-  const { user } = useAuth();
   const { mode } = useTheme();
   const isDark = mode === 'dark';
 

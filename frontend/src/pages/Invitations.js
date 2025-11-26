@@ -14,8 +14,7 @@ import {
   Grid,
   Tabs,
   Tab,
-  Avatar,
-  Divider
+  Avatar
 } from '@mui/material';
 import api from '../services/api';
 import { format } from 'date-fns';
@@ -70,7 +69,7 @@ const Invitations = () => {
   );
 
   // Загружаем историю приглашений в команды (все статусы)
-  const { data: teamInvitationsHistory, isLoading: teamHistoryLoading } = useQuery(
+  const { data: teamInvitationsHistory } = useQuery(
     'teamInvitationsHistory',
     async () => {
       try {
@@ -89,7 +88,7 @@ const Invitations = () => {
   );
 
   // Загружаем историю приглашений в проекты (все статусы)
-  const { data: projectInvitationsHistory, isLoading: projectHistoryLoading } = useQuery(
+  const { data: projectInvitationsHistory } = useQuery(
     'projectInvitationsHistory',
     async () => {
       try {
@@ -272,9 +271,8 @@ const Invitations = () => {
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
                     <Avatar 
                       src={getAvatarUrl(invitation.invitedBy?.avatar)} 
-                      sx={{ width: 24, height: 24, fontSize: '0.75rem' }}
+                      sx={{ width: 24, height: 24, fontSize: '0.75rem', cursor: 'pointer' }}
                       onClick={() => invitation.invitedBy?.id && navigate(`/users/${invitation.invitedBy.id}`)}
-                      sx={{ cursor: 'pointer' }}
                     >
                       {invitation.invitedBy?.firstName?.[0]}
                     </Avatar>

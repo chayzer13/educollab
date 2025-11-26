@@ -30,7 +30,7 @@ import {
 } from '@mui/icons-material';
 import { Link, useNavigate } from 'react-router-dom';
 import api from '../services/api';
-import { format, formatDistanceToNow } from 'date-fns';
+import { formatDistanceToNow } from 'date-fns';
 import ru from 'date-fns/locale/ru';
 import { useTheme } from '../context/ThemeContext';
 import { useAuth } from '../context/AuthContext';

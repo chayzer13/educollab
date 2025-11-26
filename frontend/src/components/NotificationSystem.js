@@ -1,12 +1,10 @@
 import React, { useState, useMemo, useRef } from 'react';
 import { useQuery, useQueryClient } from 'react-query';
 import {
-  Snackbar,
   Alert,
   IconButton,
   Badge,
   Menu,
-  MenuItem,
   Divider,
   Typography,
   Box,
@@ -14,7 +12,6 @@ import {
   Chip,
   Card,
   CardContent,
-  Paper,
   Avatar
 } from '@mui/material';
 import {
@@ -23,7 +20,6 @@ import {
   CheckCircle as CheckCircleIcon,
   Cancel as CancelIcon,
   Group as GroupIcon,
-  Person,
   Folder as FolderIcon
 } from '@mui/icons-material';
 import { useTheme } from '../context/ThemeContext';

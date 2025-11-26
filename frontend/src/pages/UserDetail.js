@@ -119,16 +119,6 @@ const UserDetail = () => {
     return labels[role] || role;
   };
 
-  const getRoleColor = (role) => {
-    const colors = {
-      student: 'default',
-      teacher: 'primary',
-      mentor: 'secondary',
-      admin: 'primary'
-    };
-    return colors[role] || 'default';
-  };
-
   return (
     <Container maxWidth="lg" sx={{ py: 4 }}>
       <Button

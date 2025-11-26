@@ -52,7 +52,6 @@ import { useTheme } from '../context/ThemeContext';
 const Admin = () => {
   const { user, loading: authLoading } = useAuth();
   const { mode } = useTheme();
-  const navigate = useNavigate();
   const queryClient = useQueryClient();
   const isDark = mode === 'dark';
 

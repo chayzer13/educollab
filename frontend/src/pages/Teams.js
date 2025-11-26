@@ -12,7 +12,6 @@ import {
   Box,
   Chip,
   CircularProgress,
-  Avatar,
   Paper,
   LinearProgress
 } from '@mui/material';
@@ -28,7 +27,7 @@ import {
 } from '@mui/icons-material';
 import api from '../services/api';
 import { useAuth } from '../context/AuthContext';
-import { format, formatDistanceToNow } from 'date-fns';
+import { formatDistanceToNow } from 'date-fns';
 import ru from 'date-fns/locale/ru';
 import { useTheme } from '../context/ThemeContext';
 

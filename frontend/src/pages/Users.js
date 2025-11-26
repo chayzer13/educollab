@@ -25,7 +25,7 @@ import {
 } from '@mui/icons-material';
 import api from '../services/api';
 import { useTheme } from '../context/ThemeContext';
-import { format, formatDistanceToNow } from 'date-fns';
+import { formatDistanceToNow } from 'date-fns';
 import ru from 'date-fns/locale/ru';
 import { getAvatarUrl } from '../utils/avatar';
 
